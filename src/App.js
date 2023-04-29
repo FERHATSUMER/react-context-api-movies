@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Watchlist />}/>
           <Route path="/watched" element={<Watched />}/>
+          
         </Routes>
       </Router>
     </div>

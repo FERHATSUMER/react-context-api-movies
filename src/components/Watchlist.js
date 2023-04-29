@@ -1,10 +1,11 @@
-import React from 'react'
+
+import React from "react";
 
 const Watchlist = () => {
   return (
-    <div>Watchlist
+    <div>
     </div>
-  )
-}
+  );
+};
 
-export default Watchlist
+export default Watchlist;

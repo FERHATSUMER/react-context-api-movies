@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { AiOutlinePlus } from 'react-icons/fa';
 const Header = () => {
   return (
     <header>
@@ -15,7 +15,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/add">
-                <i className="fas fa-plus"></i>
+                <i><AiOutlinePlus /></i>
               </Link>
             </li>
           </ul>
