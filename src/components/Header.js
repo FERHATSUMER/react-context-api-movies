@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Watched from "./Watched";
 
 const Header = () => {
   return (
@@ -12,13 +11,14 @@ const Header = () => {
           </div>
           <ul className="nav-links">
             <li>
-              <Link to={Watched}>İzlenenler</Link>
+              <Link to={"/watched"}>İzlenenler</Link>
             </li>
-          <li>
-            <i className="fas fa-plus"></i>
-          </li>
+            <li>
+              <Link to="/add">
+                <i className="fas fa-plus"></i>
+              </Link>
+            </li>
           </ul>
-
         </div>
       </div>
     </header>
