@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AiOutlinePlus } from 'react-icons/fa';
+import { AiOutlinePlus } from 'react-icons/ai';
+
 const Header = () => {
   return (
     <header>
@@ -14,8 +15,8 @@ const Header = () => {
               <Link to={"/watched"}>İzlenenler</Link>
             </li>
             <li>
-              <Link to="/add">
-                <i><AiOutlinePlus /></i>
+              <Link to="/add" className="btn">
+              <AiOutlinePlus />
               </Link>
             </li>
           </ul>
