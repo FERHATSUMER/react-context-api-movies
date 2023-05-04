@@ -4,13 +4,6 @@ const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
 
-  function onChange(e) {
-    setQuery(e.target.value);
-    fetch(`
-    "https://api.themoviedb.org/3/movie/popular?api_key=your_api_key_here&language=en-US&page=1"`)
-      .then((res) => res.json())
-      .then((data) =>setResults(data.results));
-  }
   return (
     <div className="add-page">
       <div className="container">
@@ -20,21 +13,18 @@ const Add = () => {
             alt=""
           />
           <div className="titles">
-            <h1>Hoş Geldiniz</h1>
+            <h1>Hoş Geldiniz.</h1>
             <h2>
-              Milyonlarca film, TV şovu ve keşfedilecek kişi.Şimdi keşfedin
+              Milyonlarca film, TV şovu ve keşfedilecek kişi. Şimdi keşfedin.
             </h2>
           </div>
           <div className="input-wrapper">
             <input
               type="text"
               value={query}
-              onChange={onChange}
-              placeholder="Film,dizi,kişi ara..."
+              placeholder="Film, dizi, kişi ara..."
             />
           </div>
-          {results.map((movie)=>
-          <h1 key={movie.id}>{movie.title} </h1>)}
         </div>
       </div>
     </div>
